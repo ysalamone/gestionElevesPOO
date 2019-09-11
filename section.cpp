@@ -20,7 +20,8 @@ void Section::supprimerEtudiant()
 	cout<<"Entrez le numero de l'élèves que vous voulez supprimer"<<endl;
 	int numEleveASuppr=0;
 	cin>>numEleveASuppr;
-	cin.ingore(1);
+	cin.ignore(1);
+	while (!(numCaseASupprimer==n
 
 
 }
