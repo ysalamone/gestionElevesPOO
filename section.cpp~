@@ -76,7 +76,7 @@ int Section::rechercheEleve()
 	if (numEleve==tabEtudiant[numCaseAExaminer].numero)
 	{
 			
-			tabEtudiant[numCaseAExaminer];
+			tabEtudiant[numCaseAExaminer].noteEleve();
 		
 	}
 	else{

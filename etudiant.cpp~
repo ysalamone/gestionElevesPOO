@@ -13,6 +13,7 @@ void Etudiant::fromKeyboard()
 
 void Etudiant::affiche()
 {
+	cout<<"Ma moyenne: "<<moyenne<<endl;
 	cout<<"Nom de l'élèves: "<<nom<<endl;
 	cout<<"Prénom de l'élèves: "<<prenom<<endl;
 	cout<<"Numero de l'élèves: "<<numero<<endl;

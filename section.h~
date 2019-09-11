@@ -19,5 +19,4 @@ class Section
 		void supprimerEtudiant();//suppr elèves
 		void afficheEtudiants();
 		void afficherLibelle();
-		int rechercheEleve();
 };

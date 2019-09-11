@@ -21,7 +21,7 @@ void ajouterSection() {
 	string libSection;
 	cout<<"Saisir le nom de la section à ajouter : ";
 	getline(cin, libSection);
-	vecteurSections.push_back(Section(libSection));
+	vecteurSections.push_back(Section(libsection));
 }
 
 void supprimerSection() {
