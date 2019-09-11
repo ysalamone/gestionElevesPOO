@@ -1,5 +1,9 @@
 #include "section.h"
 
+void Section::Section(string leLibelle) {
+	libelleSection = leLieblle;
+}
+
 void Section::ajoutEtudiant()
 {
 	cout<<"New etudiants"<<endl;
@@ -79,5 +83,6 @@ int Section::rechercheEleve()
 	}
 }
 
-	
-	
+void Section::afficherLibelle() {
+	cout<<libelleSection<<endl;
+}
