@@ -4,6 +4,15 @@ Section::Section(string leLibelle) {
 	libelleSection = leLibelle;
 }
 
+string Section::retournerLib() {
+	return(libelleSection);
+}
+
+void Section::afficherLibelle()
+{
+	cout<<sectionLib<<endl;
+}
+
 void Section::ajoutEtudiant()
 {
 	cout<<"New etudiants"<<endl;
@@ -76,14 +85,10 @@ int Section::rechercheEleve()
 	if (numEleve==tabEtudiant[numCaseAExaminer].numero)
 	{
 			
-			tabEtudiant[numCaseAExaminer].noteEleve();
+			tabEtudiant[numCaseAExaminer];
 		
 	}
 	else{
 		cout<<"pas bon"<<endl;
 	}
-}
-
-void Section::afficherLibelle() {
-	cout<<libelleSection<<endl;
 }

@@ -11,6 +11,8 @@ class Section
 
 		//Les méthodes
 		Section(string leLibelle);
+		string retournerLib();
+		void afficherLibelle();
 		int afficheMenu();//Affiche le menu gérant les etudiants de la section séléctionner
 		int executerAction(int actionChoisis);
 		int getEtudiantIndiceByNumero(int numero);
@@ -18,6 +20,5 @@ class Section
 		void ajoutEtudiant();
 		void supprimerEtudiant();//suppr elèves
 		void afficheEtudiants();
-		void afficherLibelle();
 		int rechercheEleve();
 };

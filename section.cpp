@@ -4,6 +4,15 @@ Section::Section(string leLibelle) {
 	libelleSection = leLibelle;
 }
 
+string Section::retournerLib() {
+	return(libelleSection);
+}
+
+void Section::afficherLibelle()
+{
+	cout<<libelleSection<<endl;
+}
+
 void Section::ajoutEtudiant()
 {
 	cout<<"New etudiants"<<endl;
@@ -82,8 +91,4 @@ int Section::rechercheEleve()
 	else{
 		cout<<"pas bon"<<endl;
 	}
-}
-
-void Section::afficherLibelle() {
-	cout<<libelleSection<<endl;
 }
