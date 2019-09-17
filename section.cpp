@@ -25,8 +25,16 @@ void Section::supprimerEtudiant()
 	int numEleveASuppr=0;
 	cin>>numEleveASuppr;
 	cin.ignore(1);
-	//while (!(numCaseASupprimer==n
-
+	while (!(numCaseASupprimer==nbEtudiant-1 || numEleveASuppr==tabEtudiant[numCaseASupprimer].numero))
+	{
+		numCaseASupprimer++;
+	}
+	if (numEleveASuppr==tabEtudiant[numCaseASupprimer])
+	{
+		tabEtudiant.erase(numCaseASupprimer);
+	}
+	else {
+		cout<<"L'élève est déjà supprimer ou le numéro est incorrect"<<endl;
 
 }
 
