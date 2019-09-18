@@ -63,11 +63,11 @@ int Section::afficheMenu()
 	int choix;  //Variable pour choisir 
 	do
 	{
-	cout<<"Tapez 1 pour entrez un nouvel élèves"<<endl;
-	cout<<"Tapez 2 Afficher les etudiants en slam1"<<endl;
+	cout<<"Tapez 1 pour entrez un nouvel élève"<<endl;
+	cout<<"Tapez 2 Afficher les etudiants de la section"<<endl;
 	cout<<"Tapez 3 Pour supprimer un élève"<<endl;
 	//cout<<"Tapez 4 Pour modifier un élève "<<endl;
-	cout<<"Tapez 999 pour Quitter"<<endl;
+	cout<<"Tapez 999 pour revenir au menu des sections"<<endl;
 	cout<<"Quel choix voulez-vous "<<endl;
 	cin>>choix;
 	cin.ignore(1);
@@ -108,6 +108,6 @@ int Section::rechercheEleve()
 		vecteurEtudiant[numCaseAExaminer];
 	}
 	else {
-		cout<<"pas bon"<<endl;
+		cout<<"Impossible de trouver l'élève"<<endl;
 	}
 }
