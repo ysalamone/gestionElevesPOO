@@ -15,14 +15,23 @@ void Section::afficherLibelle()
 
 void Section::ajoutEtudiant()
 {
-	cout<<"New etudiants"<<endl;
-	vecteurEtudiant[nbEtudiant].fromKeyboard();
-	nbEtudiant++;
+	cout<<"New etudiant"<<endl;
+	string leNom;
+	string lePrenom;
+	int leNumero;
+	cout<<"Quel est le nom de l'etudiant ? ";
+	getline(cin,leNom);
+	cout<<"Quel est le prenom de l'etudiant ? ";
+	getline(cin,lePrenom);
+	cout<<"Entrez son numéro : ";;
+	cin>>leNumero;
+	cin.ignore(1);
+	vecteurEtudiant.push_back(Etudiant(leNom,lePrenom,leNumero));
 }
 
 void Section::afficheEtudiants()
 {
-	for(int noCase=0;noCase<nbEtudiant;noCase++)
+	for(int noCase=0;noCase<vecteurEtudiant.size();noCase++)
 	{
 		vecteurEtudiant[noCase].affiche();//STP
 	}
@@ -30,7 +39,7 @@ void Section::afficheEtudiants()
 
 void Section::supprimerEtudiant()
 {
-	cout<<"Entrez le numero de l'élèves que vous voulez supprimer"<<endl;
+	cout<<"Entrez le numero de l'élève que vous voulez supprimer"<<endl;
 	int numEleveASuppr=0;
 	cin>>numEleveASuppr;
 	cin.ignore(1);

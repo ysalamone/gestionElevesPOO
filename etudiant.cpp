@@ -19,9 +19,9 @@ void Etudiant::fromKeyboard()
 
 void Etudiant::affiche()
 {
-	cout<<"Nom de l'élèves: "<<nom<<endl;
-	cout<<"Prénom de l'élèves: "<<prenom<<endl;
-	cout<<"Numero de l'élèves: "<<numero<<endl;
+	cout<<"Nom de l'élève : "<<nom<<endl;
+	cout<<"Prénom de l'élève : "<<prenom<<endl;
+	cout<<"Numéro de l'élève : "<<numero<<endl;
 
 }
 
