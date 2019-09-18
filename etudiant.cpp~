@@ -18,3 +18,7 @@ void Etudiant::affiche()
 	cout<<"Numero de l'élèves: "<<numero<<endl;
 
 }
+
+int Etudiant::retournerNumEleve() {
+	return numero;
+}

@@ -6,11 +6,11 @@ class Section
 		//Les propriétés
 		int nbEtudiant;
 		string libelleSection;
-		Etudiant tabEtudiant[40];
-		
+		vector<Etudiant> vecteurEtudiant;
 
 		//Les méthodes
 		Section(string leLibelle);
+		string retournerLib();
 		void afficherLibelle();
 		int afficheMenu();//Affiche le menu gérant les etudiants de la section séléctionner
 		int executerAction(int actionChoisis);

@@ -26,19 +26,20 @@ int Application::getSectionIdByNom()
 	listeSections();
 	string nomSectionRecherchee;
 	int indiceRecherche=0;
-		cout<<"Saisissez le nom de la section concernée : ";
-		getline(cin,nomSectionRecherchee);
-		while(!(indiceRecherche==vecteurSections.size()))
+	cout<<"Saisissez le nom de la section concernée : ";
+	getline(cin,nomSectionRecherchee);
+	do
+	{
+		if(nomSectionRecherchee != vecteurSections[indiceRecherche].retournerLib())
 		{
-			if(nomSectionRecherchee != vecteurSections[indiceRecherche].retournerLib())
-			{
-				indiceRecherche++;
-			}
+			indiceRecherche++;
 		}
-		if(indiceRecherche==vecteurSections.size())
-		{
-			cout<<"La section n'a pas été trouvée, veuillez réessayer en faisant attention à la casse."<<endl;
-		}
+	}while(!(indiceRecherche == vecteurSections.size() || nomSectionRecherchee == vecteurSections[indiceRecherche].retournerLib()));
+
+	if(indiceRecherche == vecteurSections.size())
+	{
+		cout<<"La section n'a pas été trouvée, veuillez réessayer en faisant attention à la casse."<<endl;
+	}
 	return(indiceRecherche);
 }
 
@@ -67,6 +68,8 @@ void Application::supprimerSection() {
 
 void Application::choisirSection() {
 	cout<<"-- Choisir une section --"<<endl<<endl;
+	int indiceSelection = getSectionIdByNom();
+	vecteurSections[indiceSelection].afficheMenu();
 }
 
 void Application::menuSection() {

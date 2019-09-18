@@ -11,7 +11,7 @@ class Etudiant
 		int numero;
 	public:
 		//Les methodes
-		Etudiant(string leNom, string lePrenom, int leNumero);
+		Etudiant(string leNom, string lePrenom);
 		void affiche();
 		void fromKeyboard();
 		int retournerNumEleve();

@@ -6,8 +6,7 @@ class Section
 		//Les propriétés
 		int nbEtudiant;
 		string libelleSection;
-		Etudiant tabEtudiant[40];
-		
+		vector <Etudiant> vecteurEtudiant;
 
 		//Les méthodes
 		Section(string leLibelle);

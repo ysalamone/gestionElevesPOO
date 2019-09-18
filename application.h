@@ -1,5 +1,4 @@
 #include "section.h"
-#include <vector>
 
 class Application
 {

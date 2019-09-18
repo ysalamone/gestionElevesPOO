@@ -12,6 +12,7 @@ class Application
 		void voirSections();
 		void listeSections();
 		void ajouterSection();
+		int getSectionIdByNom();
 		void supprimerSection();
 		void choisirSection();
 };
